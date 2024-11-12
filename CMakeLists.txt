@@ -36,13 +36,9 @@ if(MSVC)
     add_definitions(-D_CRT_SECURE_NO_WARNINGS)
 endif()
 
-
-
-
 add_subdirectory(src/cpp subprocess)
 
 if (BUILD_TESTING)
     enable_testing()
     add_subdirectory(test)
 endif(BUILD_TESTING)
-
